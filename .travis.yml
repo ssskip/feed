@@ -1,0 +1,15 @@
+
+language: go
+
+go:
+  - 1.4
+  - 1.5
+  - 1.5.1
+  - 1.6
+
+install:
+  - go get golang.org/x/text/encoding
+  - go get golang.org/x/text/transform
+  - go get golang.org/x/net/html
+
+script: go test -v ./...
